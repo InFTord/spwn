@@ -1,0 +1,11 @@
+extract obj_props
+$.add(obj{
+    OBJ_ID: 59,
+    X: 30,
+    Y: 100,
+    GROUPS: 10g,
+})
+let moving = !{
+    10g.move(70, 0, 0.5, easing = BOUNCE_IN_OUT)
+}
+on(touch(), moving)
